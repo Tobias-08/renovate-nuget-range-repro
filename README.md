@@ -9,7 +9,7 @@
     - results in (e. g.) `3.4.142-alpha` being preferred if no stable and instead this prerelease version exists
 - renovate
   - current behavior
-    - `-*`-PackageReferences are replaced with a concrete version, e. g. `3.4.142-alpha`
+    - `-*`-PackageReferences are replaced with a concrete version, e. g. `3.4.231` or `3.4.142-alpha`
   - expected behavior
     - renovate leaves the `-*` untouched and just cares about the major.minor.patch-part, at least if this is configured (via `"rangeStrategy": "replace"` or another appropriate config option)
     - example:
